@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    
+    tools:context="com.example.navigationsdk.IndexActivity">  
+       
+   	<com.amap.api.maps.MapView
+       android:id="@+id/mapview"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       />
+   	
+    <LinearLayout
+			android:id="@+id/buttonbar"
+			android:layout_width="match_parent"
+			android:layout_height="35dip"
+			android:layout_marginLeft="5dip"
+			android:layout_marginRight="5dip"		
+			android:layout_marginTop="15dip"
+			android:baselineAligned="false"
+			android:background="#bcffffff"
+			android:orientation="horizontal" >
+			<LinearLayout
+			    android:layout_weight="1"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:background="#00ffffff"
+				android:gravity="center" >
+					<Button
+						android:id="@+id/end"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:background="#00ffffff"
+						android:singleLine="true"
+						android:onClick="chooseEnd"
+						android:text="选家住址"
+						android:textColor="@drawable/style_button"
+						style="?android:attr/buttonBarButtonStyle" />				
+			</LinearLayout>
+			<LinearLayout
+			    android:layout_weight="1"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:background="#00ffffff"
+				android:gravity="center">				
+					<Button
+						android:id="@+id/homeseek"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:background="#00ffffff"
+						android:singleLine="true"
+						android:text="@string/home_seek"
+						android:onClick="goToPoiActivity"
+						android:textColor="@drawable/style_button"
+						style="?android:attr/buttonBarButtonStyle" />				
+			</LinearLayout>
+	<!--		<LinearLayout
+			    android:layout_weight="1"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:background="#00ffffff"
+				android:gravity="center">				
+					<Button
+						android:id="@+id/enter_extend_activity"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:background="#00ffffff"
+						android:singleLine="true"
+						android:text="模拟导航"
+						android:onClick="goToEmulateActivity"
+						android:textColor="@drawable/style_button"
+						style="?android:attr/buttonBarButtonStyle" />				
+			</LinearLayout>  -->
+			<LinearLayout
+			    android:layout_weight="1"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:background="#00ffffff"
+				android:gravity="center" >				
+					<Button
+						android:id="@+id/enter_extend_activity"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:background="#00ffffff"
+						android:singleLine="true"
+						android:text="回家导航"
+						android:onClick="goToGPSActivity"
+						android:textColor="@drawable/style_button"
+						style="?android:attr/buttonBarButtonStyle" />				
+			</LinearLayout>			
+		</LinearLayout>    
+	
+ 
+ 	
+</RelativeLayout>

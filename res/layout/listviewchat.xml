@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical"
+  android:gravity="center_vertical|left"
+  android:padding="1dip"
+  >
+	<LinearLayout
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:orientation="horizontal"
+  		android:gravity="center_vertical|left"
+  		
+  		>  
+	<!-- 		<ImageView 
+			android:id="@+id/ItemImage" 
+			android:layout_width="32dip"
+			android:layout_height="32dip"
+			android:layout_marginLeft="10dip"
+			android:layout_marginRight="10dip"
+			android:focusable="false"
+			android:src="@drawable/next_on"
+			>
+			</ImageView>  	 -->
+			<LinearLayout
+  			android:layout_width="wrap_content"
+  			android:layout_height="wrap_content"
+  			android:orientation="vertical"
+  			android:gravity="center_vertical|left">
+	  			<TextView 
+				android:layout_height="48dp" 
+				android:layout_width="wrap_content" 
+				android:id="@+id/tv_addr" 
+				android:text="重庆"
+				android:textSize="20sp"
+				android:textColor="@color/textword" 
+				android:gravity="center"
+				android:layout_marginLeft="15dp"
+				android:focusable="false"
+				android:ellipsize="end">
+				</TextView>				
+  			</LinearLayout>	
+
+<!-- 		<LinearLayout
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content"
+  			android:orientation="vertical"
+  			android:gravity="center_vertical|right">
+				<CheckBox 
+				android:layout_height="wrap_content" 
+				android:layout_width="wrap_content" 
+				android:id="@+id/ItemSel"
+				android:visibility="gone"
+				android:layout_marginRight="4dip"
+				style="@style/CustomCheckboxTheme"
+				>
+				</CheckBox>	
+				<ImageView 
+				android:id="@+id/groupHide"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:layout_marginLeft="10dip"
+				android:layout_marginRight="10dip"
+				android:focusable="false"
+				android:src="@drawable/next_off"
+				android:visibility="gone"
+				/>
+  			</LinearLayout>	
+	 -->												
+  	</LinearLayout>	
+	
+  				 
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" >
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="48dp"
+	    android:orientation="horizontal"
+	    android:background="@color/title_color" >    
+	    <ImageView
+			android:id="@+id/titleBackImageBtn"
+			android:src="@drawable/style_button_back_gray"
+	        android:layout_width="wrap_content"   
+	        android:layout_height="match_parent"
+	        android:layout_alignParentLeft="true"
+	     	android:padding="8dp"
+	        android:background="@drawable/back_background" 
+	        android:contentDescription="@string/app_name"
+	        />   
+	  	<TextView
+	  		android:id="@+id/titleTextView"   
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"  
+	        android:background="@color/title_color" 
+	        android:textSize="18.0sp"
+			android:textColor="@color/title_text_color"
+	        android:padding="10dip"
+	        android:layout_centerInParent="true"
+	        android:gravity="center"
+	  	/> 	
+	</RelativeLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5.0dip"
+         >
+
+        <AutoCompleteTextView
+            android:id="@+id/keyWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/text_search"
+            android:completionThreshold="1"
+            android:dropDownVerticalOffset="1.0dip"
+            android:hint="请输入关键字"
+            android:textColorHint="@color/darkgrey"
+            android:imeOptions="actionDone"
+            android:inputType="text|textAutoComplete"
+            android:maxLength="20"
+            android:paddingRight="37.0dip"
+            android:singleLine="true"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:textSize="16.0sp" />
+
+  <!--    <EditText 
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5.0dip"
+            android:hint="请输入城市"
+            android:textColorHint="@color/darkgrey"
+            android:text="北京"
+            android:background="@drawable/text_search"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="16.0sp"/> --> 
+    </LinearLayout>
+       
+	<LinearLayout 
+	        android:orientation="horizontal"
+	    	android:layout_width="fill_parent"
+	    	android:layout_marginTop="8dp"
+	    	android:layout_marginLeft="16.0dip"
+	    	android:layout_marginRight="16.0dip"
+	    	android:layout_height="wrap_content">
+	      <!--    <Button	            
+				android:id="@+id/searchButton"
+				android:layout_width="0dp" 
+				android:layout_height="46dp"
+				android:layout_weight="3"	
+				android:text="搜索"	
+				android:textSize="19.0sp"
+				android:textColor="@color/white"		
+				android:background="@drawable/denglu_selector" >
+			</Button>-->
+			 <Button	            
+				android:id="@+id/searchButton"
+				android:layout_width="0dp" 
+				android:layout_height="46dp"
+				android:layout_weight="3"	
+				android:text="搜索"	
+				android:textSize="19.0sp"
+				android:textColor="@color/black" >
+			</Button>
+			<View 
+			    android:layout_width="10.0dip"
+			    android:layout_height="fill_parent"/>
+	<!-- 		<Button	            
+				android:id="@+id/nextButton"
+				android:layout_width="0dp" 
+				android:layout_height="48dp"
+				android:layout_weight="2"
+				android:text="下一页"	
+				android:paddingLeft="28dp"
+				android:textSize="19.0sp"
+				android:textColor="@color/white"								
+				android:background="@drawable/next_selector"
+				/> -->
+			<Button	            
+				android:id="@+id/nextButton"
+				android:layout_width="0dp" 
+				android:layout_height="48dp"
+				android:layout_weight="2"
+				android:text="下一页"	
+				android:textSize="19.0sp"
+				android:textColor="@color/black"
+				/>
+	    </LinearLayout>
+<!--     <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.amap.api.maps.SupportMapFragment" /> -->   
+		<LinearLayout 
+			android:layout_width="match_parent" 
+			android:layout_height="match_parent">
+			<com.amap.safone.util.ListViewChat 
+	   			android:layout_marginTop="0px"
+	   			android:layout_marginLeft="4px"
+	   			android:layout_marginRight="6px"
+				android:id="@+id/lv_chatlist" 				
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:cacheColorHint="#00000000"
+				android:listSelector="#CCFFFF"
+				android:divider="#00000000"	
+				android:dividerHeight="1dip"			
+				/>
+					
+		</LinearLayout>	
+</LinearLayout>
